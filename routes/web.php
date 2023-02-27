@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\viewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::controller(AuthController::class)->group(function(){
+    Route::post("adminlogin", "adminlogin");
+    Route::get('logout', 'logout');
+});
+
+
+Route::controller(viewController::class)->group(function(){
+   Route::get('paystack/{ref}', 'paystack_verify');
+   Route::get('blogs', 'blogs');
+   Route::post('search', 'search');
 });
