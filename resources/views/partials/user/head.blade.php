@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <title>Sacredia - Church HTML5 Template</title>
+  <title>@yield('title', 'Christ Ambassadors - No. 1 Site for Christian Podcasts')</title>
   <!--Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
   <!--OWL Carousel slider-->
@@ -29,4 +29,4 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
-  @yield('scripts')
+  @yield('style')

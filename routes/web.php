@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.user.index');
 });
 
-
+// Route::get('/');
 Route::controller(AuthController::class)->group(function(){
     Route::post("adminlogin", "adminlogin");
     Route::get('logout', 'logout');

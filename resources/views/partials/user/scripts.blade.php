@@ -14,3 +14,5 @@
 
 <!--Custome-JS-->
 <script src="assets/js/interface.js"></script>
+
+@yield('scripts')
